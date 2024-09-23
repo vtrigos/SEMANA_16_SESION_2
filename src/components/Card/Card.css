@@ -1,0 +1,94 @@
+.containerCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    position: relative;
+    width: 340px;
+    height: 460px;
+    border-radius: 20px;
+    border: 2px solid #cdd1da;
+    padding-top: 60px;
+}
+
+.card.standard {
+    border: 2px solid #0b65e2;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 30px;
+}
+
+.data {
+    font-size: 13px;
+    list-style: none;
+    line-height: 30px;
+    color: #6d6a6a;
+    padding-bottom: 50px;
+}
+
+.priceCircle {
+    position: absolute;
+    top: -64px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f3f2f2;
+
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    color: #064399;
+
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.priceCircle.standard {
+    background: #0b65e2;
+    color: white;
+}
+
+button {
+    width: 50%;
+    background-color: transparent;
+    color: #064399;
+    border: 2px solid #064399;
+    border-radius: 5px;
+    
+    padding: 20px 20px;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid #0b65e2;
+    color:#0b65e2;
+}
+
+button.standard {
+    background-color: #064399;
+    color: white;
+    border: none;
+}
+
+
+button.standard:hover {
+    background-color: #0b65e2;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
